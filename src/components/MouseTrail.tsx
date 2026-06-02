@@ -150,7 +150,7 @@ export default function MouseTrail({ scrollY }: { scrollY: React.MutableRefObjec
     dispersion: { value: 1.5, min: 0.0, max: 10.0, step: 0.1 },
     momentum: { value: 0.5, min: 0.0, max: 3.0, step: 0.1 },
     colorA: '#00ffff', // Cyan
-    colorB: '#ff00ff', // Magenta
+    colorB: '#00ff23', // green
   })
 
   const { camera } = useThree()

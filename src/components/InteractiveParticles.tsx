@@ -145,10 +145,10 @@ export default function InteractiveParticles({ scrollY }: { scrollY: React.Mutab
     speed: { value: 1.0, min: 0.0, max: 5.0 },
     curlFreq: { value: 0.15, min: 0.0, max: 1.0 },
     mouseForce: { value: 8.0, min: -20.0, max: 20.0 }, 
-    mouseRadius: { value: 8.0, min: 1.0, max: 30.0, step: 0.5 },
-    particleSize: { value: 4.0, min: 0.1, max: 20.0 },
+    mouseRadius: { value: 1.0, min: 1.0, max: 30.0, step: 0.5 },
+    particleSize: { value: 0.1, min: 0.1, max: 20.0 },
     colorA: '#00ffff', // Cyan
-    colorB: '#ff00ff', // Magenta
+    colorB: '#29ff00', // green
   })
 
   const { camera } = useThree()
