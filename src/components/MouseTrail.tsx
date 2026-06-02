@@ -255,9 +255,9 @@ export default function MouseTrail({ scrollY }: { scrollY: React.MutableRefObjec
   return (
     <points material={renderMaterial} frustumCulled={false}>
       <bufferGeometry ref={geometryRef}>
-        <bufferAttribute attach="attributes-position" count={COUNT} array={positions} itemSize={3} />
-        <bufferAttribute attach="attributes-aVelocity" count={COUNT} array={velocities} itemSize={3} />
-        <bufferAttribute attach="attributes-aBirthTime" count={COUNT} array={birthTimes} itemSize={1} />
+        <bufferAttribute attach="attributes-position" args={[positions, 3]} count={COUNT} array={positions} itemSize={3} />
+        <bufferAttribute attach="attributes-aVelocity" args={[velocities, 3]} count={COUNT} array={velocities} itemSize={3} />
+        <bufferAttribute attach="attributes-aBirthTime" args={[birthTimes, 1]} count={COUNT} array={birthTimes} itemSize={1} />
       </bufferGeometry>
     </points>
   )

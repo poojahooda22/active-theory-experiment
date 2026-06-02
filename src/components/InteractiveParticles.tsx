@@ -138,10 +138,7 @@ void main() {
 }
 `
 
-const particleCount = 16384; // 128x128
-
 export default function InteractiveParticles({ scrollY }: { scrollY: React.MutableRefObject<number> }) {
-  const meshRef = useRef<THREE.Points>(null)
   const size = 128
   
   const controls = useControls({

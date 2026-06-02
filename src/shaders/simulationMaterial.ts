@@ -138,7 +138,7 @@ void main() {
 }
 `
 
-export function getSimulationMaterial(size: number) {
+export function getSimulationMaterial(_size: number) {
   const simulationMaterial = new THREE.ShaderMaterial({
     vertexShader: simulationVertexShader,
     fragmentShader: simulationFragmentShader,
